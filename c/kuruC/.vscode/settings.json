@@ -1,0 +1,20 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/kawai/ros2_ws/build/xl430_diffdrive",
+        "/home/kawai/ros2_ws/install/xl430_diffdrive/lib/python3.10/site-packages",
+        "/home/kawai/ros2_ws/build/p9n_bringup",
+        "/home/kawai/ros2_ws/install/p9n_bringup/lib/python3.10/site-packages",
+        "/home/kawai/ros2_ws/build/my_py_pkg",
+        "/home/kawai/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages",
+        "/home/kawai/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
+        "/home/kawai/ros2_ws/build/mirror_eval_tools",
+        "/home/kawai/ros2_ws/install/mirror_eval_tools/lib/python3.10/site-packages",
+        "/home/kawai/ros2_ws/build/measure_reflect_distance",
+        "/home/kawai/ros2_ws/install/measure_reflect_distance/lib/python3.10/site-packages",
+        "/home/kawai/ros2_ws/build/dynamixel_controller_py",
+        "/home/kawai/ros2_ws/install/dynamixel_controller_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
