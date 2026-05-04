@@ -1,0 +1,47 @@
+#include <stdbool.h>
+#include <stdio.h>
+/*3人分の、名前、年齢、性別、を入力して表示するプログラム*/
+/*データの入力と表示はそれぞれ専用の関数を作って行う*/
+
+typedef struct {
+  char name[64];
+  int age;
+  int sex; /*male:1, female:0*/
+} profile;
+
+void profile_input(profile* data);
+void profile_print(profile* data);
+
+int main(void) {
+  profile data[3];
+  int i;
+  for (i = 0; i < 3; i++) {
+    profile_input(&data[i]);
+  }
+
+  for (i = 0; i < 3; i++) {
+    profile_print(&data[i]);
+  }
+  return 0;
+}
+
+void profile_input(profile* data) {
+  printf("名前を入力してください：");
+  scanf("%s", data->name);
+  printf("年齢を入力してください：");
+  scanf("%d", &data->age);
+  printf("性別を入力してください：");
+  scanf("%d", &data->sex);
+}
+
+void profile_print(profile* data) {
+  printf("name: %s\n", data->name);
+  printf("age: %d\n", data->age);
+  if (data->sex == 0) {
+    printf("sex: female\n");
+  } else if (data->sex == 1) {
+    printf("sex: male\n");
+  } else {
+    printf("sex: ?\n");
+  }
+}
